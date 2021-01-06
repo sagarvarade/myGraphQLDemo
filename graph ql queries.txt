@@ -1,0 +1,29 @@
+mutation{
+  createCourse(input: {
+    	courseName:"JAVA"
+    	category:"ddd"
+    	price:1000
+    	stack:MOBILE
+    	teachingAssists:[{
+        firstName:"SAGR"
+        lastName:"VARADE"
+        experience:10
+      }]
+  }){
+    id,
+    courseName
+  }}
+
+  
+
+  
+  
+query{
+  getCourse (id :"mFDNteb3VgUwsLieAJPYz"){
+		id
+    teachingAssists{
+      experience
+    }
+  }
+}
+  
